@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ventana"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@id/image"
+        android:layout_width="226dp"
+        android:layout_height="193dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtdomicilio"
+        app:layout_constraintEnd_toStartOf="@+id/txtdia"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtdia"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Dia"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txthora"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txthora"
+        android:layout_width="110dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:hint="Hora"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnbuscar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="181dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/fondoboton"
+        android:text="BUSCAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtdomicilio"
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Domicilio"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtcorreo"
+        app:layout_constraintEnd_toStartOf="@+id/txthora"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtcorreo"
+        android:layout_width="211dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnbuscar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="60dp"
+        android:text="Consulta de citas"
+        app:layout_constraintBottom_toTopOf="@+id/txtdia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
